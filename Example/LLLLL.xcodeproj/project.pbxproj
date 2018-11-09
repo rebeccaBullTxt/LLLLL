@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		09E4D9F9ED6DB9EFAF610C30 /* Pods_LLLLL_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLLLL_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AF2404AC3E63211ECAE5C7 /* Pods-LLLLL_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLLLL_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLLLL_Tests/Pods-LLLLL_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		582AC6F5A3FB89EC7470F0EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5FB796C972B0AC633BB7F2EB /* LLLLL.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LLLLL.podspec; path = ../LLLLL.podspec; sourceTree = "<group>"; };
+		582AC6F5A3FB89EC7470F0EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5FB796C972B0AC633BB7F2EB /* LLLLL.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLLLL.podspec; path = ../LLLLL.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LLLLL_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLLLL_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B27BE844A5A4D42CEFF3CEF1 /* Pods-LLLLL_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLLLL_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLLLL_Example/Pods-LLLLL_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E29A9521E593D6081ED8002D /* Pods_LLLLL_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLLLL_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43AD47210B49DCBE45FAC5A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E43AD47210B49DCBE45FAC5A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F3A53D9A551E9396AF31154E /* Pods-LLLLL_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLLLL_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLLLL_Tests/Pods-LLLLL_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -326,12 +326,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LLLLL_Example/Pods-LLLLL_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LLLLL/LLLLL.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLLLL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,6 +505,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/ReactiveObjC/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -518,6 +521,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/ReactiveObjC/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

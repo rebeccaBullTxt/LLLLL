@@ -1,0 +1,32 @@
+{
+  "name": "LLLLL",
+  "version": "0.1.0",
+  "summary": "LLLLLLLLLLLLLLLLLLLL",
+  "description": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+  "homepage": "https://github.com/rebeccaBullTxt/LLLLL",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rebeccaBullTxt": "rebeccaBull@sina.com"
+  },
+  "source": {
+    "git": "https://github.com/rebeccaBullTxt/LLLLL.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LLLLL/Classes/**/*",
+  "public_header_files": "LLLLL/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "ReactiveObjC": [
+
+    ]
+  }
+}

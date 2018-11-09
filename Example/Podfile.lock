@@ -1,0 +1,23 @@
+PODS:
+  - LLLLL (0.1.0):
+    - ReactiveObjC
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - LLLLL (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReactiveObjC
+
+EXTERNAL SOURCES:
+  LLLLL:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LLLLL: 9e34e20270ee5c43924099df93b4e45b6fc3f050
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: 713b827168482f9a51bea687004be4deffa0542b
+
+COCOAPODS: 1.5.3
